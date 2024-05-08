@@ -8,6 +8,7 @@ const port = 3000;
 
 app.use(express.static('src'));
 app.set('view engine', 'ejs');
+app.set("views", path.join(__dirname, "views"));
 
 // Define the blog routes
 app.get('/', (req, res) => {
