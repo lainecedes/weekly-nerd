@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Syne:wght@400..800&display=swap');
+
+html {
+    background: lavenderblush;
+}
+
+h1 {
+    font-family: "Syne";
+    font-variation-settings: 'wdth' 1000, 'wght' 740;
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+body {
+    font-family: "Lexend Deca";
+    margin: 0 auto;
+    padding: 1em 0 0 0;
+    max-width: 80%;
+}
+
+/* Code */
+
+header {
+    width: 100%;
+
+    & nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    & ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2em;
+    }
+
+    & li {
+        list-style: none;
+        
+    }
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    & i {
+        font-size: 2em;
+    }
+    & a {
+        text-decoration: none;
+        color: inherit;
+        
+    }
+    & li {
+        list-style: none;
+    }
+    
+}

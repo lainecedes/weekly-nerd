@@ -1,0 +1,12 @@
+{
+    "name": "Kilian Valkhof",
+    "img": "",
+    "date": "07-02-2024",
+    "week": "1",
+    "url": "kilian-valkhof",
+    "description": "Over the use of more HTML/CSS over Javascript and new techniques ",
+    "quote": "The rule of least power: choose the least powerful language suitable for a given purpose.",
+    "markdownFilePath": "markdown/kilian-valkhof.md",
+    "reflection": "It’s nice to see that he showed loads of HTML/CSS tags without having to use Javascript. The first thing that came up in my mind was: “Hey! This  is quite handy if you want to work with different types of progressive enhancements.” I knew some tags, and some not at all, like the :has() tag, and I wanted to try them out for the next projects that I’m going to make in the future to see if they make a difference in my development.",
+    "use": "Everything! However I have to keep in mind that some are very new and not supported yet, but some useful tags will definitely be used for progressive enhancement, and css tricks. I will also try out Polypane in the near future to test out my responsive designs (if I get Github Student Pack to work!)."
+}
