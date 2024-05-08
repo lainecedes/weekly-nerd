@@ -6,9 +6,10 @@ const hljs = require('highlight.js');
 const app = express();
 const port = 3000;
 
-app.use(express.static('src'));
+app.use(express.static(path.join(__dirname, "src")));
 app.set('view engine', 'ejs');
 app.set("views", path.join(__dirname, "views"));
+
 
 // Define the blog routes
 app.get('/', (req, res) => {
