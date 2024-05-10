@@ -32,6 +32,10 @@ app.get('/lecturer/:url', (req, res) => {
           return;
       }
 
+      // Log the current directory
+        console.log('__dirname:', __dirname);
+
+
       // Find the JSON file for the requested lecturer
       const lecturerFile = files.find(file => file.endsWith('.json') && file.startsWith(lecturerUrl));
 
