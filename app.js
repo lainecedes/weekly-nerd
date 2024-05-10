@@ -25,7 +25,7 @@ app.get('/lecturer/:url', (req, res) => {
   const lecturerUrl = req.params.url;
 
   // Read JSON files dynamically
-  fs.readdir('./data', (err, files) => {
+  fs.readdir('data', (err, files) => {
       if (err) {
           console.error(err);
           res.status(500).send('Internal Server Error');
