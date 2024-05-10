@@ -29,7 +29,7 @@ app.get('/lecturer/:url', (req, res) => {
   fs.readdir(jsonPath, (err, files) => {
       if (err) {
           console.error(err);
-          res.status(500).send('Internal Server Error');
+          res.status(500).send('JSON files not found: Internal Server Error');
           return;
       }
 
@@ -49,7 +49,7 @@ app.get('/lecturer/:url', (req, res) => {
       fs.readFile(filePath, 'utf8', (err, data) => {
           if (err) {
               console.error(err);
-              res.status(500).send('Internal Server Error');
+              res.status(500).send('Could not read JSON file: Internal Server Error');
               return;
           }
 
@@ -61,7 +61,7 @@ app.get('/lecturer/:url', (req, res) => {
           fs.readFile(markdownFilePath, 'utf8', (err, markdownContent) => {
               if (err) {
                   console.error(err);
-                  res.status(500).send('Internal Server Error');
+                  res.status(500).send('Could not read Markdown file: Internal Server Error');
                   return;
               }
 
