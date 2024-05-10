@@ -22,58 +22,59 @@ function generateRoutePath(url) {
 }
 
 app.get('/lecturer/:url', (req, res) => {
-  const lecturerUrl = req.params.url;
-  const jsonPath = path.resolve(__dirname, './data');
-
-  // Read JSON files dynamically
-  fs.readdir(jsonPath, (err, files) => {
-      if (err) {
-          console.error(err);
-          res.status(500).send('JSON files not found: Internal Server Error');
-          return;
-      }
-
-
-
-      // Find the JSON file for the requested lecturer
-      const lecturerFile = files.find(file => file.endsWith('.json') && file.startsWith(lecturerUrl));
-
-      if (!lecturerFile) {
-          res.status(404).send('Lecturer not found');
-          return;
-      }
-
-      const filePath = path.join(__dirname, 'data', lecturerFile);
-
-      // Read the JSON file
-      fs.readFile(filePath, 'utf8', (err, data) => {
-          if (err) {
-              console.error(err);
-              res.status(500).send('Could not read JSON file: Internal Server Error');
-              return;
-          }
-
-          // Parse the JSON data
-          const lecturer = JSON.parse(data);
-
-          // Read the Markdown content from the file path
-          const markdownFilePath = path.join(__dirname, lecturer.markdownFilePath);
-          fs.readFile(markdownFilePath, 'utf8', (err, markdownContent) => {
-              if (err) {
-                  console.error(err);
-                  res.status(500).send('Could not read Markdown file: Internal Server Error');
-                  return;
-              }
-
-              // Convert Markdown content to HTML
-              const htmlContent = marked.parse(markdownContent);
-
-              // Render the page for the lecturer
-              res.render('lecturer', { lecturer: lecturer, htmlContent: htmlContent });
-          });
-      });
+    const lecturerUrl = req.params.url;
+    const jsonDataPath = path.join(__dirname, 'data');
+  
+    // Read JSON files dynamically
+    fs.readdir(jsonDataPath, (err, files) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('JSON files not found: Internal Server Error');
+            return;
+        }
+  
+        // Find the JSON file for the requested lecturer
+        const lecturerFile = files.find(file => file.endsWith('.json') && file.startsWith(lecturerUrl));
+  
+        if (!lecturerFile) {
+            res.status(404).send('Lecturer not found');
+            return;
+        }
+  
+        const jsonFilePath = path.join(jsonDataPath, lecturerFile); // Adjusted the JSON file path
+  
+        // Read the JSON file
+        fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                res.status(500).send('Could not read JSON file: Internal Server Error');
+                return;
+            }
+  
+            // Parse the JSON data
+            const lecturer = JSON.parse(data);
+  
+            // Read the Markdown content from the file path
+            const markdownFilePath = path.join(__dirname, lecturer.markdownFilePath);
+            console.log('Markdown File Path:', markdownFilePath);
+  
+            fs.readFile(markdownFilePath, 'utf8', (err, markdownContent) => {
+                if (err) {
+                    console.error(err);
+                    res.status(500).send('Could not read Markdown file: Internal Server Error');
+                    return;
+                }
+  
+                // Convert Markdown content to HTML
+                const htmlContent = marked.parse(markdownContent);
+  
+                // Render the page for the lecturer
+                res.render('lecturer', { lecturer: lecturer, htmlContent: htmlContent });
+            });
+        });
+    });
   });
-});
+  
 
 
 app.listen(port, () => {
