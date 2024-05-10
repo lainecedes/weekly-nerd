@@ -23,13 +23,13 @@ function generateRoutePath(url) {
 
 app.get('/lecturer/:url', (req, res) => {
     const lecturerUrl = req.params.url;
-    const dataPath = path.join(__dirname, 'data');
+    const dataPath = path.join(process.cwd(), 'data');
 
     // Read JSON files dynamically
     fs.readdir(dataPath, function(err, files) {
         if (err) {
             console.error(err);
-            res.status(500).send('Internal Server Error');
+            res.status(500).send('JSON file not found: Internal Server Error');
             return;
         }
 
@@ -49,7 +49,7 @@ app.get('/lecturer/:url', (req, res) => {
         fs.readFile(jsonFilePath, 'utf8', function(err, data) {
             if (err) {
                 console.error(err);
-                res.status(500).send('Internal Server Error');
+                res.status(500).send('JSON file not read: Internal Server Error');
                 return;
             }
 
@@ -57,13 +57,13 @@ app.get('/lecturer/:url', (req, res) => {
             const lecturer = JSON.parse(data);
 
             // Read the Markdown content from the file path
-            const markdownFilePath = path.join(__dirname, lecturer.markdownFilePath);
+            const markdownFilePath = path.join(process.cwd(), lecturer.markdownFilePath);
             console.log('Markdown File Path:', markdownFilePath);
 
-            fs.readFile(path.resolve(process.cwd(), markdownFilePath), 'utf8', function(err, markdownContent) {
+            fs.readFile(markdownFilePath, 'utf8', function(err, markdownContent) {
                 if (err) {
                     console.error(err);
-                    res.status(500).send('Internal Server Error');
+                    res.status(500).send('Markdown not read: Internal Server Error');
                     return;
                 }
 
@@ -76,6 +76,7 @@ app.get('/lecturer/:url', (req, res) => {
         });
     });
 });
+
   
 
 
