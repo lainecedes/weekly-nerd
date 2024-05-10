@@ -23,57 +23,59 @@ function generateRoutePath(url) {
 
 app.get('/lecturer/:url', (req, res) => {
     const lecturerUrl = req.params.url;
-    const jsonDataPath = path.join(__dirname, 'data');
-  
+    const dataPath = path.join(__dirname, 'data');
+
     // Read JSON files dynamically
-    fs.readdir(jsonDataPath, (err, files) => {
+    fs.readdir(dataPath, function(err, files) {
         if (err) {
             console.error(err);
-            res.status(500).send('JSON files not found: Internal Server Error');
+            res.status(500).send('Internal Server Error');
             return;
         }
-  
+
         // Find the JSON file for the requested lecturer
-        const lecturerFile = files.find(file => file.endsWith('.json') && file.startsWith(lecturerUrl));
-  
+        const lecturerFile = files.find(function(file) {
+            return file.endsWith('.json') && file.startsWith(lecturerUrl);
+        });
+
         if (!lecturerFile) {
             res.status(404).send('Lecturer not found');
             return;
         }
-  
-        const jsonFilePath = path.join(jsonDataPath, lecturerFile); // Adjusted the JSON file path
-  
+
+        const jsonFilePath = path.join(dataPath, lecturerFile); // Adjusted the JSON file path
+
         // Read the JSON file
-        fs.readFile(jsonFilePath, 'utf8', (err, data) => {
+        fs.readFile(jsonFilePath, 'utf8', function(err, data) {
             if (err) {
                 console.error(err);
-                res.status(500).send('Could not read JSON file: Internal Server Error');
+                res.status(500).send('Internal Server Error');
                 return;
             }
-  
+
             // Parse the JSON data
             const lecturer = JSON.parse(data);
-  
+
             // Read the Markdown content from the file path
             const markdownFilePath = path.join(__dirname, lecturer.markdownFilePath);
             console.log('Markdown File Path:', markdownFilePath);
-  
-            fs.readFile(markdownFilePath, 'utf8', (err, markdownContent) => {
+
+            fs.readFile(path.resolve(process.cwd(), markdownFilePath), 'utf8', function(err, markdownContent) {
                 if (err) {
                     console.error(err);
-                    res.status(500).send('Could not read Markdown file: Internal Server Error');
+                    res.status(500).send('Internal Server Error');
                     return;
                 }
-  
+
                 // Convert Markdown content to HTML
                 const htmlContent = marked.parse(markdownContent);
-  
+
                 // Render the page for the lecturer
                 res.render('lecturer', { lecturer: lecturer, htmlContent: htmlContent });
             });
         });
     });
-  });
+});
   
 
 
