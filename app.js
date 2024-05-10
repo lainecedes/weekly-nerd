@@ -23,17 +23,16 @@ function generateRoutePath(url) {
 
 app.get('/lecturer/:url', (req, res) => {
   const lecturerUrl = req.params.url;
+  const jsonPath = path.resolve(__dirname, './data');
 
   // Read JSON files dynamically
-  fs.readdir('data', (err, files) => {
+  fs.readdir(jsonPath, (err, files) => {
       if (err) {
           console.error(err);
           res.status(500).send('Internal Server Error');
           return;
       }
 
-      // Log the current directory
-        console.log('__dirname:', __dirname);
 
 
       // Find the JSON file for the requested lecturer
