@@ -13,24 +13,24 @@
         <main>
             <%- include ('partials/header.ejs'); %>
 
-            <h1><%= lecturer.name %></h1>
+            <h1><%= lecturerData.name %></h1>
 
             <div>
-                <p>Week <%= lecturer.week %></p>
-                <p><%= lecturer.date %></p>
+                <p>Week <%= lecturerData.week %></p>
+                <p><%= lecturerData.date %></p>
             </div>
 
             <section>
                 <!-- markdown content -->
-                <%- htmlContent %>
+                <%- blogPost %>
             </section>
 
             <section>
                 <h2>Reflection</h2>
-                <p><%= lecturer.reflection %></p>
+                <p><%= lecturerData.reflection %></p>
 
                 <h2>What will I bring with me in the future?</h2>
-                <p><%= lecturer.use %></p>
+                <p><%= lecturerData.use %></p>
             </section>
             
             <%- include ('partials/footer.ejs'); %>
