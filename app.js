@@ -34,17 +34,17 @@ app.get('/lecturer/:url', (req, res) => {
     fs.readFile(markdownFile, 'utf8', function(err, files) {
         if (err) {
             console.error(err);
-            res.status(500).send('Markdown File not found');
+            res.status(500).send('Markdown file not found');
             return;
         }
 
     fs.readFile(jsonFile, 'utf8', function(err, data) {
         if (err) {
             console.error(err);
-            res.status(500).send('Markdown File not found');
+            res.status(500).send('JSON file not found');
             return;
         }
-    
+
 
         const blogPost = marked.parse(files);
         const lecturerData = JSON.parse(data);
