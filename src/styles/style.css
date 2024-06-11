@@ -2,6 +2,8 @@
 
 html {
     background: lavenderblush;
+    --white: #fff;
+    --black: #000;
 }
 
 h1 {
@@ -16,19 +18,19 @@ h1 {
 body {
     font-family: "Lexend Deca";
     margin: 0 auto;
-    padding: 1em 0 0 0;
-    max-width: 80%;
 }
+
 
 /* Code */
 
 header {
-    width: 100%;
+    margin: 0 2em 0 2em;
 
-    & nav {
+    nav {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
+
     }
 
     & ul {
@@ -36,6 +38,8 @@ header {
         justify-content: space-between;
         align-items: center;
         gap: 2em;
+        margin: 0;
+        padding: 0;
     }
 
     & li {
@@ -45,7 +49,7 @@ header {
 }
 
 
-/* Footer */
+/* Footer
 footer {
     display: flex;
     justify-content: space-between;
@@ -68,4 +72,120 @@ footer {
         list-style: none;
     }
     
+} */
+
+.user-profile {
+    position: relative;
+    top: -6em;
+
+    width: 100vw; 
+    height: 35vh; 
+    background-image: url('../images/achtergrond.jpeg');
+    background-size: cover;  
+    background-position: center; 
+
+    z-index: -100;
+  }
+  
+
+  .user-white-banner {
+    position: relative;
+    bottom: -14em;
+
+    width: 100vw; 
+    height: 8vh;
+    background-color: var(--white);
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    ul li {
+
+        list-style: none;
+    }
+
+  }
+
+
+
+
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -3.5em;
+    align-items: flex-start; /* Align items at the start of the container */
+}
+
+.sidebar {
+    width: 20%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-sidebar {
+    margin-right: 20px;
+    margin-top: -10em; /* Adjust this value to position the left sidebar higher */
+}
+
+.right-sidebar {
+    margin-left: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    background-color: pink;
+    border-radius: 1em;
+    width: 100%;
+}
+
+.profile h2 {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+}
+
+.profile p {
+    color: #657786;
+}
+
+.tweet {
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.tweet p {
+    margin: 0;
+}
+
+.suggestions h3 {
+    margin: 0 0 10px;
+}
+
+.suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions ul li {
+    margin-bottom: 10px;
+}
+
+.suggestions ul li a {
+    text-decoration: none;
+    color: #1da1f2;
 }
