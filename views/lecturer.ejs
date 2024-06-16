@@ -15,34 +15,53 @@
             <%- include ('partials/lecturer-header.ejs'); %>
 
             <div class="container">
-                <div class="sidebar left-sidebar">
-                    <!-- Left sidebar content -->
-                    <div class="profile">
-                        <img src="../images/lainecedes.png" alt="Profile Picture">
-                        <h2>⭐️ Elaine ⭐️</h2>
-                        <p>@lainecedes</p>
+           
+                    <div class="sidebar left-sidebar">
+                        <div class="profile">
+                            <img src="../images/lainecedes.png" alt="Profile Picture">
+                            <h2>⭐️ Elaine ⭐️</h2>
+                            <p>@lainecedes</p>
+                        </div>
+
+                        <div class="trends">
+                            <h3>Trends</h3>
+                            <ul>
+                                <% lecturerData.category.forEach(function(item) { %>
+                                    <li><%= item %></li>
+                                <% }); %>
+                            </ul>
+                        </div>
                     </div>
-                    <!-- Other sidebar content -->
-                </div>
+
+                
                 <div class="main-content">
                     <!-- Main content -->
-    
     
                     <div class="tweet-container">
                         <img src="<%= lecturerData.img %>" alt="Kilian Valkhof">
                         <div class="tweet-content">
                             <div class="tweet-header">
                                 <h3><%= lecturerData.name %></h3>
-                                <button class="tweet-action-button">Follow</button>
+                                <button class="tweet-action-button">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    Follow
+                                </button>
                             </div>
                             <span class="tweet-username"><%= lecturerData.username %></span>
                             <p class="tweet-date"><%= lecturerData.date %></p>
                             <div class="tweet-details">
                                 <%- blogPost %>
                             </div>
+                            <!-- Tweet actions -->
+                            <div class="tweet-actions">
+                                <i class="fas fa-reply"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="fas fa-star favorite-button"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
                         </div>
                     </div>
-
+                    
                     <div class="tweet-comment">
                         <img src="../images/lainecedes.png" alt="Elaine's Profile Photo">
                         <div class="comment-content">
@@ -54,30 +73,41 @@
                             <div class="comment-details">
                                 <h2>Reflection</h2>
                                 <p><%= lecturerData.reflection %></p>
-
+                    
                                 <h2>What will I bring with me in the future?</h2>
                                 <p><%= lecturerData.use %></p>
                             </div>
+                            <!-- Tweet actions -->
+                            <div class="tweet-actions">
+                                <i class="fas fa-reply"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="fas fa-star favorite-button"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
                         </div>
                     </div>
-                    
-            
-    
-                    <!-- More tweets -->
                 </div>
-            </div>
 
-            <div>
-                <p>Week <%= lecturerData.week %></p>
-            </div>
+                <div class="sidebar right-sidebar">
+                    <!-- Right sidebar content -->
+                    <div class="suggestions">
+                        <h3>You may also like</h3>
+                        <ul>
+                            <% shuffledLecturers.slice(0, 5).forEach(user => { %>
+                                <li><a href="<%= user.href %>"><%= user.username %></a></li>
+                            <% }); %>
+                        </ul>
+                        
+                        
+                        <%- include ('partials/footer.ejs'); %>
+                    </div>
+                </div>
 
-            
-            <%- include ('partials/footer.ejs'); %>
         </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script>
-        <script src="scripts/script.js"></script>
+        <script src="/scripts/script.js"></script>
         
     </body>
 

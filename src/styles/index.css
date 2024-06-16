@@ -6,6 +6,9 @@ html {
     background: lavenderblush;
     --white: #fff;
     --black: #000;
+    --twitter-blue: #1da1f2;
+    --twitter-yellow: rgb(241, 201, 0);
+    --grey: #657786;
 }
 
 h1 {
@@ -24,7 +27,7 @@ body {
 }
 
 
-/* Code */
+/* GENERAL CODE */
 
 header {
     margin: 0 2em 0 2em;
@@ -49,33 +52,13 @@ header {
         list-style: none;
         
     }
-}
-
-
-/* Footer
-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1em;
-    align-items: center;
-
-    & i {
-        font-size: 2em;
-    }
+    
     & a {
         text-decoration: none;
         color: inherit;
-        
     }
-    & li {
-        list-style: none;
-    }
-    
-} */
+}
+
 
 .user-profile {
     position: relative;
@@ -146,7 +129,7 @@ footer {
 
 .index .main-content {
     flex: 1;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -163,24 +146,38 @@ footer {
 }
 
 .index .profile p {
-    color: #657786;
+    color: var(--grey);
 }
 
 
 
-/* Tweets */
+
+
+/* TWEETS */
 
 
 .index .tweet-container {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     gap: 1em;
-    border-bottom: 1px solid #e1e8ed;
+
+    > img {
+        width: 4em;
+        border-radius: 0.5em;
+        box-shadow: 1px 1px 2px var(--grey);
+    }
+
+    .tweet {
+        list-style: none;
+        border-bottom: 1px solid #e1e8ed;
+        width: 100%;
+    }
+
 }
 
-.index .tweet-container img {
-    width: 4em;
-    border-radius: 0.5em;
+.index .tweets-container .tweet:last-child {
+    border-bottom: none;
 }
 
 
@@ -191,19 +188,30 @@ footer {
 .index .tweet-header {
     display: flex;
     align-items: center;
-    gap: 0.5em;
-}
+    gap: 0.7em;
+    padding: 0 0 1em 0;
 
-.index .tweet-header h3 {
-    margin: 0;
-    font-size: 1em;
-    font-weight: bold;
-}
+    h3 {
+        margin: 0;
+        font-size: 1em;
+        font-weight: bold;
+    }
 
-.index .tweet-header .tweet-date {
-    /* margin-left: 10px; */
-    color: #657786;
-    font-size: 0.8em;
+    .tweet-date {
+        color: var(--grey);
+        font-size: 0.8em;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--twitter-blue);
+    }
+
+    img {
+        width: 4em;
+        border-radius: 0.5em;
+        box-shadow: 1px 1px 2px var(--grey);
+    }
 }
 
 .index .tweet-username {
@@ -222,20 +230,75 @@ footer {
 
 
 
-.index .suggestions h3 {
-    margin: 0 0 10px;
+.index {
+
+    .suggestions h3 {
+        margin: 0 0 10px;
+    }
+
+    .suggestions ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .suggestions ul li {
+        margin-bottom: 10px;
+        font-size: 0.8em;
+    }
+
+    .suggestions ul li a {
+        text-decoration: none;
+        color: #1da1f2;
+    }
+
 }
 
-.index .suggestions ul {
-    list-style: none;
-    padding: 0;
+
+/* TWEET ACTIONS */
+
+.tweet-actions {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin: 0.7em 0 0.7em 0;
+    color: var(--grey);
 }
 
-.index .suggestions ul li {
-    margin-bottom: 10px;
+.tweet-actions .favorite-button {
+    cursor: pointer;
 }
 
-.index .suggestions ul li a {
-    text-decoration: none;
-    color: #1da1f2;
+.tweet-actions .favorite-button.active {
+    color: var(--twitter-yellow);
+}
+
+
+.footer-text {
+    font-size: 0.7em;
+    
+
+    p {
+        margin: 0;
+        padding: 0 0 0.5em 0;
+    }
+}
+
+
+
+
+/* ------------------------------ */
+/* HLJS - CODE ADDITIONAL STYLING */
+/* ------------------------------ */
+
+pre code {
+    border-radius: 0.5em;
+}
+
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+.footer-text {
+    color: var(--grey);
 }

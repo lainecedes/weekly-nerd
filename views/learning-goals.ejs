@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weekly Nerd</title>
+    <title>Weekly Nerd - Learning Goals</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/shades-of-purple.min.css">
     <script src="https://kit.fontawesome.com/f796b34f57.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
-    <main class="index">
+    <main class="index learning-goals">
         <%- include ('partials/header.ejs'); %>
 
 
@@ -29,18 +29,28 @@
 
 
                 <ul class="tweet-container">
-                    <% shuffledLecturers.forEach(data => { %>
                         <li class="tweet">
 
                             <div class="tweet-content">
                                 <div class="tweet-header">
-                                    <img src="<%= data.img %>" alt="<%= data.name %>">
-                                    <h3><%= data.name %></h3>
-                                   <a href="<%= data.href %>"><span class="tweet-username"><%= data.username %></span></a>
-                                    <p class="tweet-date"><%= data.date %></p>
+                                    <img src="../images/lainecedes.png" alt="Elaine's profile picture">
+                                    <h3>⭐️ Elaine ⭐️</h3>
+                                   <a href="#"><span class="tweet-username">@lainecedes</span></a>
+                                    <p class="tweet-date">1 May</p>
                                 </div>
-                                <p class="tweet-text"><%= data.tweet %></p>
-                                <div class="tweet-details"></div>
+                                <p class="tweet-text">Learning Goals</p>
+                                <div class="tweet-details">
+                                    <ul>
+                                        <li>
+                                            <p>1. Beter worden in samenwerken want heb nog steeds de neiging om alles zelf te doen terwijl voor meerdere projecten het soms beter is om in een team te zitten.</p>
+                                            <p>2. Eigen tooling pakket bouwen: een standaard pakket hebben waar ik proficient kan worden zodat ik beter web apps kan bouwen. Nu probeer ik van alles en is het een beetje rommelig qua structuur.</p>
+                                            <p>3. Websites voor all en ook all bouwen, meer letten op dat mensen die beperkingen hebben ook je site bezoeken en dit zoveel mogelijk standaard maken. Het feit dat een website goed toegankelijk is (or zelfs gewoon goede en creatieve ondertiteling beschikbaar is in een video zoals bij Marie in HCD) maakt echt zoveel verschil voor de user experience en zorgt ervoor dat ze niet worden buitengesloten en media ook goed kan ervaren.</p>
+                                        </li>
+                                    </ul>
+
+                                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXA2YWRpaW85d2k5cWp0OHlzdDJldjQ4cjRzcW0wbmoyZ2dwZDVmZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xHDJ1TKo2VNdkqDKw0/giphy.gif">
+                                </div>
+
                                 <!-- Tweet actions -->
                                 <div class="tweet-actions">
                                     <i class="fas fa-reply"></i>
@@ -50,7 +60,6 @@
                                 </div>
                             </div>
                         </li>
-                    <% }); %>
                 </ul>
 
                 <!-- More tweets -->
@@ -70,20 +79,11 @@
             </div>
         </div>
 
-        <!-- <section class="content">
-            <h2>Elaine's blog scribbles</h2>
-            <p>In mijn blog hou ik de Weekly Nerd colleges bij en maak ik posts over wat ik 
-                ervan vind.</p>
 
+            
             <h3>Leerdoelen</h3>
-            <ul>
-                <li>
-                    <p>1. Beter worden in samenwerken want heb nog steeds de neiging om alles zelf te doen terwijl voor meerdere projecten het soms beter is om in een team te zitten.</p>
-                    <p>2. Eigen tooling pakket bouwen: een standaard pakket hebben waar ik proficient kan worden zodat ik beter web apps kan bouwen. Nu probeer ik van alles en is het een beetje rommelig qua structuur.</p>
-                    <p>3. Websites voor all en ook all bouwen, meer letten op dat mensen die beperkingen hebben ook je site bezoeken en dit zoveel mogelijk standaard maken. Het feit dat een website goed toegankelijk is (or zelfs gewoon goede en creatieve ondertiteling beschikbaar is in een video zoals bij Marie in HCD) maakt echt zoveel verschil voor de user experience en zorgt ervoor dat ze niet worden buitengesloten en media ook goed kan ervaren.</p>
-                </li>
-            </ul>
-        </section>  -->
+            
+        </section> 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>

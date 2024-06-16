@@ -5,6 +5,8 @@
     "date": "06-03-2024",
     "week": "4",
     "url": "nils-binder",
+    "category": ["#9elements", "#css", "#html", "#grid", "#containerqueries"],
+    "tweet": "Grids and container queries are cool ykno",
     "quote": "",
     "description": "A nice short lecture about the wrapper, grid and container queries",
     "markdownFilePath": "markdown/nils-binder.md",

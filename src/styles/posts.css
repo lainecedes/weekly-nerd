@@ -1,133 +1,178 @@
+/* CATEGORIES PER LECTURER AS TRENDS*/
 
+.trends {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        color: var(--twitter-blue);
+        text-wrap: wrap;
+        list-style: none;
+    }
+
+}
 
 
 /* CSS STYLING FOR LECTURER POSTS */
 
-.lecturer .container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.lecturer {
 
-    align-items: flex-start; /* Align items at the start of the container */
-}
+    .container {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
 
-.lecturer .sidebar {
-    width: 17%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+        align-items: flex-start; /* Align items at the start of the container */
+    }
 
-.lecturer .left-sidebar {
-    margin-right: 20px;
-}
+    .sidebar {
+        width: 17%;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
 
-.lecturer .right-sidebar {
-    margin-left: 20px;
-}
+     .left-sidebar {
+        margin-right: 20px;
+    }
+    
+    .right-sidebar {
+        margin-left: 20px;
+        width: 13%;
+    }
+    
+     .main-content {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .profile img {
+        background-color: pink;
+        border-radius: 1em;
+        width: 100%;
+    }
+    
+    .profile h2 {
+        margin: 10px 0 0;
+        font-size: 1.5em;
+    }
+    
+    .profile p {
+        color: #657786;
+    }
 
-.lecturer .main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.lecturer .profile img {
-    background-color: pink;
-    border-radius: 1em;
-    width: 100%;
-}
-
-.lecturer .profile h2 {
-    margin: 10px 0 0;
-    font-size: 1.5em;
-}
-
-.lecturer .profile p {
-    color: #657786;
-}
-
-
-
-.lecturer .tweet-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 1em;
-    border-bottom: 1px solid #e1e8ed;
-    padding: 10px 0; /* Add some padding for better spacing */
-}
-
-.lecturer .tweet-container img {
-    width: 4em;
-    border-radius: 0.5em;
-}
-
-.lecturer .tweet-content {
-    flex: 1;
-}
-
-.lecturer .tweet-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5em;
-}
-
-.lecturer .tweet-header h3 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.lecturer .tweet-action-button {
-    background-color: #1da1f2;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 0.3em;
-    cursor: pointer;
-    font-size: 0.9em;
-}
-
-.lecturer .tweet-username {
-    display: block;
-    font-size: 0.7em;
-    color: #657786;
-    margin: 5px 0 0; /* Add margin for spacing */
-}
-
-.lecturer .tweet-date {
-    color: #657786;
-    font-size: 0.8em;
-}
-
-.lecturer .tweet-details {
-    margin-top: 10px;
 }
 
 
 
 
 
-.lecturer .suggestions h3 {
-    margin: 0 0 10px;
+
+/* ----------------------- */
+/* TWEET CONTAINER - POSTS */
+/* ----------------------- */
+
+.lecturer {
+
+    .tweet-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 1em;
+        border-bottom: 1px solid #e1e8ed;
+        padding: 10px 0; /* Add some padding for better spacing */
+    }
+
+    .tweet-container img {
+        width: 4em;
+        border-radius: 0.5em;
+    }
+    
+    .tweet-content {
+        flex: 1;
+    }
+    
+    .tweet-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.5em;
+    }
+    
+    .tweet-header h3 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    
+    .tweet-action-button {
+        background-color: var(--twitter-blue);
+        color: var(--white);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 0.3em;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
+    
+    .tweet-username {
+        display: block;
+        font-size: 0.7em;
+        color: var(--grey);
+        margin: 5px 0 0; /* Add margin for spacing */
+    }
+    
+    .tweet-date {
+        color: var(--grey);
+        font-size: 0.8em;
+    }
+    
+    .tweet-details {
+        margin-top: 10px;
+    }
+
 }
 
-.lecturer .suggestions ul {
-    list-style: none;
-    padding: 0;
+
+
+
+/* ----------- */
+/* SUGGESTIONS */
+/* ----------- */
+
+
+.lecturer  {
+
+    .suggestions h3 {
+        margin: 0 0 10px;
+    }
+
+    .suggestions ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .suggestions ul li {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+    }
+    
+    .suggestions ul li a {
+        text-decoration: none;
+        color: var(--twitter-blue);
+    }
+    
+
 }
 
-.lecturer .suggestions ul li {
-    margin-bottom: 10px;
-}
-
-.lecturer .suggestions ul li a {
-    text-decoration: none;
-    color: #1da1f2;
-}
 
 
 
@@ -163,12 +208,12 @@
     
     .comment-username {
         font-size: 0.7em;
-        color: #657786;
+        color: var(--grey);
     }
     
     .comment-date {
         font-size: 0.8em;
-        color: #657786;
+        color: var(--grey);
     }
     
     .comment-details {
