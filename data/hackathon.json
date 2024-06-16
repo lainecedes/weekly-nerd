@@ -1,6 +1,7 @@
 {
     "name": "Hackathon",
-    "img": "",
+    "img": "../images/hackathon-css-day.jpeg",
+    "username": "@lainecedes, @Sensinki, @rosemulazada, @briannededeugd",
     "date": "25-03-2024",
     "week": "7",
     "url": "hackathon",

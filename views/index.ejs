@@ -6,21 +6,12 @@
     <title>Weekly Nerd</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/shades-of-purple.min.css">
     <script src="https://kit.fontawesome.com/f796b34f57.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 
 <body>
-    <main>
+    <main class="index">
         <%- include ('partials/header.ejs'); %>
-
-        <section class="user-profile">
-            <div class="user-white-banner">
-                <ul>
-                    <li>blogs</li>
-                    <li>favorites</li>
-                </ul>
-            </div>
-        </section>
 
 
         <div class="container">
@@ -35,14 +26,21 @@
             </div>
             <div class="main-content">
                 <!-- Main content -->
-                <div class="tweet">
-                    <p>test</p>
-                    <!-- other tweet details -->
+
+
+                <div class="tweet-container">
+                    <img src="../images/kilian.jpeg" alt="Kilian Valkhof">
+                    <div class="tweet-content">
+                        <div class="tweet-header">
+                            <h3>Kilian Valkhof</h3>
+                            <span class="tweet-username">@kilian</span>
+                            <p class="tweet-date">12 Feb</p>
+                        </div>
+                        <p class="tweet-text">Stop using Javascript, dammit!</p>
+                        <div class="tweet-details"></div>
+                    </div>
                 </div>
-                <div class="tweet">
-                    <p>test</p>
-                    <!-- other tweet details -->
-                </div>
+
                 <!-- More tweets -->
             </div>
             <div class="sidebar right-sidebar">

@@ -1,6 +1,7 @@
 {
     "name": "Julia Miocene",
-    "img": "",
+    "img": "../images/julia-miocene.jpeg",
+    "username": "@julia_miocene",
     "date": "18-03-2024",
     "week": "6",
     "url": "julia-miocene",

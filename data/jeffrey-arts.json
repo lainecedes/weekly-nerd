@@ -1,6 +1,7 @@
 {
     "name": "Jeffrey Arts",
-    "img": "",
+    "img": "../images/jeffrey-arts.jpeg",
+    "username": "@jeffery.arts",
     "date": "28-02-2024",
     "week": "3",
     "url": "jeffrey-arts",

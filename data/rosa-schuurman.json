@@ -1,12 +1,13 @@
 {
-    "name": "Rosa Schuurman",
-    "img": "",
+    "name": "Rosa Schuurmans",
+    "img": "../images/rosa-schuurmans.jpeg",
+    "username": "@rosaschuurmans",
     "date": "10-04-2024",
     "week": "9",
-    "url": "rosa-schuurman",
+    "url": "rosa-schuurmans",
     "description": "It's all about creative coding and circuit bending",
     "quote": "De status-quo niet per definitie accepteren.",
-    "markdownFilePath": "markdown/rosa-schuurman.md",
+    "markdownFilePath": "markdown/rosa-schuurmans.md",
     "reflection": "tba",
     "use": "tba"
 }

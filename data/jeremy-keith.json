@@ -1,6 +1,7 @@
 {
     "name": "Jeremy Keith",
-    "img": "",
+    "img": "../images/jeremy-keith.jpeg",
+    "username": "@adactio",
     "date": "13-03-2024",
     "week": "5",
     "url": "jeremy-keith",

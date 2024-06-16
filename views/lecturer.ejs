@@ -6,32 +6,71 @@
     <title>Weekly Nerd</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/shades-of-purple.min.css">
     <script src="https://kit.fontawesome.com/f796b34f57.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/posts.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 
     <body>
-        <main>
-            <%- include ('partials/header.ejs'); %>
+        <main class="lecturer">
+            <%- include ('partials/lecturer-header.ejs'); %>
 
-            <h1><%= lecturerData.name %></h1>
+            <div class="container">
+                <div class="sidebar left-sidebar">
+                    <!-- Left sidebar content -->
+                    <div class="profile">
+                        <img src="../images/lainecedes.png" alt="Profile Picture">
+                        <h2>⭐️ Elaine ⭐️</h2>
+                        <p>@lainecedes</p>
+                    </div>
+                    <!-- Other sidebar content -->
+                </div>
+                <div class="main-content">
+                    <!-- Main content -->
+    
+    
+                    <div class="tweet-container">
+                        <img src="<%= lecturerData.img %>" alt="Kilian Valkhof">
+                        <div class="tweet-content">
+                            <div class="tweet-header">
+                                <h3><%= lecturerData.name %></h3>
+                                <button class="tweet-action-button">Follow</button>
+                            </div>
+                            <span class="tweet-username"><%= lecturerData.username %></span>
+                            <p class="tweet-date"><%= lecturerData.date %></p>
+                            <div class="tweet-details">
+                                <%- blogPost %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-comment">
+                        <img src="../images/lainecedes.png" alt="Elaine's Profile Photo">
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h3>Elaine</h3>
+                                <span class="comment-username">@lainecedes</span>
+                                <p class="comment-date">12 Feb</p>
+                            </div>
+                            <div class="comment-details">
+                                <h2>Reflection</h2>
+                                <p><%= lecturerData.reflection %></p>
+
+                                <h2>What will I bring with me in the future?</h2>
+                                <p><%= lecturerData.use %></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+    
+                    <!-- More tweets -->
+                </div>
+            </div>
 
             <div>
                 <p>Week <%= lecturerData.week %></p>
-                <p><%= lecturerData.date %></p>
             </div>
 
-            <section>
-                <!-- markdown content -->
-                <%- blogPost %>
-            </section>
-
-            <section>
-                <h2>Reflection</h2>
-                <p><%= lecturerData.reflection %></p>
-
-                <h2>What will I bring with me in the future?</h2>
-                <p><%= lecturerData.use %></p>
-            </section>
             
             <%- include ('partials/footer.ejs'); %>
         </main>

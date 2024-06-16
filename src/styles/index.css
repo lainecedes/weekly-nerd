@@ -1,3 +1,5 @@
+/* GENERAL STYLING */
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Syne:wght@400..800&display=swap');
 
 html {
@@ -18,6 +20,7 @@ h1 {
 body {
     font-family: "Lexend Deca";
     margin: 0 auto;
+    padding: 0;
 }
 
 
@@ -88,7 +91,7 @@ footer {
   }
   
 
-  .user-white-banner {
+.user-white-banner {
     position: relative;
     bottom: -14em;
 
@@ -116,7 +119,7 @@ footer {
 
 
 
-.container {
+.index .container {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -125,67 +128,114 @@ footer {
     align-items: flex-start; /* Align items at the start of the container */
 }
 
-.sidebar {
-    width: 20%;
+.index .sidebar {
+    width: 17%;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.left-sidebar {
+.index .left-sidebar {
     margin-right: 20px;
     margin-top: -10em; /* Adjust this value to position the left sidebar higher */
 }
 
-.right-sidebar {
+.index .right-sidebar {
     margin-left: 20px;
 }
 
-.main-content {
+.index .main-content {
     flex: 1;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.profile img {
+.index .profile img {
     background-color: pink;
     border-radius: 1em;
     width: 100%;
 }
 
-.profile h2 {
+.index .profile h2 {
     margin: 10px 0 0;
     font-size: 1.5em;
 }
 
-.profile p {
+.index .profile p {
     color: #657786;
 }
 
-.tweet {
-    padding: 10px 0;
+
+
+/* Tweets */
+
+
+.index .tweet-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
     border-bottom: 1px solid #e1e8ed;
 }
 
-.tweet p {
+.index .tweet-container img {
+    width: 4em;
+    border-radius: 0.5em;
+}
+
+
+.index .tweet-content {
+    flex: 1;
+}
+
+.index .tweet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.index .tweet-header h3 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.index .tweet-header .tweet-date {
+    /* margin-left: 10px; */
+    color: #657786;
+    font-size: 0.8em;
+}
+
+.index .tweet-username {
+    font-size: 0.7em;
+}
+
+.index .tweet-text {
     margin: 0;
 }
 
-.suggestions h3 {
+.index .tweet-details {
+    margin-top: 10px;
+
+}
+
+
+
+
+.index .suggestions h3 {
     margin: 0 0 10px;
 }
 
-.suggestions ul {
+.index .suggestions ul {
     list-style: none;
     padding: 0;
 }
 
-.suggestions ul li {
+.index .suggestions ul li {
     margin-bottom: 10px;
 }
 
-.suggestions ul li a {
+.index .suggestions ul li a {
     text-decoration: none;
     color: #1da1f2;
 }
