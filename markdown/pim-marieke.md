@@ -1,62 +1,26 @@
-## Digitaal Toegankelijk: Weekly Nerd over Accessibility
-Marieke is onderzoeker en oud student CMD,Active Collective
-En Pim is mede oprichter van het bedrijf
-5 jaar geleden begonnen vanuit een design agency
-Gespecialiseerd in toegankelijkheid
-8 mensen team
+## Digitaal Toegankelijk: Insights from "Weekly Nerd" on Accessibility
+In a recent Weekly Nerd session focused on digital accessibility, Marieke de Hoop, a researcher and former CMD student, and Pim Schuurman, co-founder of a specialized accessibility company called Digitaal Toegankelijk, have shedded light on important aspects of creating inclusive digital experiences.
 
-## Wie wordt er (graag) buitengesloten?
-Helderheid en kleurcontrasten, bijv buiten in de zon op je scherm zitten
-Captions, belangrijk voor doven of slechthorenden
-Tijdelijke beperkingen zoals gebroken hand, arm, cognitieve beperkingen zoals medicijnen
-Permanente beperkingen, zoals blindheid, permanente cognitieve beperkingen zoals ADHD
+### Who Gets (Unintentionally) Excluded?
+The discussion highlighted various scenarios where digital design choices often exclude individuals. Factors such as clarity and color contrast, essential for users viewing screens outdoors or in bright sunlight, and the importance of captions for the deaf or hard of hearing were emphasized. Temporary impairments like a broken hand or cognitive limitations due to medication, as well as permanent disabilities such as blindness or ADHD, were also addressed.
 
-Buitengesloten worden
-Zelf mensen buitensluiten, zoals luidruchtige mensen etc
+### Digital Accessibility Guidelines: WCAG
+The foundation of their approach lies in the Web Content Accessibility Guidelines (WCAG), which outlines the principles for accessible web content. The company tests against 50 criteria across four main principles known as POUR:
 
-Zijn er wel eens ontwerp keuzes die je maakt, waarvan je nu denkt ‘oei, daar sluit ik mensen mee buiten?’
+- Perceivable: Ensuring content is accessible to all senses.
+- Operable: Making all functionality available via keyboard or other accessible means.
+- Understandable: Ensuring content is clear and easy to comprehend.
+- Robust: Maximizing compatibility with current and future technologies.
 
-## Digitale toegankelijkheid
-WCAG
-Web Content Accessibility Guidelines - richtlijnen voor toegankelijkheid voor webcontent
-Ze testen (bedrijf) op:
-50 criteria
-4 hoofdonderwerpen
-“The Big Four”
+### Key Accessibility Requirements
+Specific requirements such as audio controls for sound longer than 3 seconds, preventing keyboard traps, and pausing or hiding auto-playing content were discussed. Guidelines also mandate avoiding elements that flash more than three times in a single second to prevent seizures.
 
-### 4 hoofdonderwerpen (POUR)
-1. Perceivable
-2. Operable
-3. Understandable
-4. Robust 
+### Practical Tips for Improving Accessibility
+The session concluded with practical advice for designers and developers:
 
-1.4.2 Audio Control: Bij geluid langer dan 3 seconden moet er een mogelijkheid zijn deze te pauzeren/stoppen, of het volume te verlagen.
+- Start with low hanging fruit: Address easy-to-fix accessibility issues using the four main principles.
+- Experience accessibility firsthand: Listen to your content with screen readers like VoiceOver (MacOS) or NVDA (Windows), and navigate using only a keyboard.
+- Test with your audience: Engage directly with your target users to ensure your digital products meet their accessibility needs.
 
-2.1.2 No Keyboard Trap: Wanneer je met het toetsenbord navigeert, mag het niet voorkomen dat je niet meer uit het element of deel kan navigeren.
-
-2.2.2 Pause Stop Hide: Alle bewegende, knipperende, scrollende of actualiserende elementen die
--  automatisch starten
-- langer dan 5 sec duren 
-- Parallel aan andere content getoond word
-Moet gepauzeerd, gestopt of verstopt kunnen worden.
-
-2.3.1 Three Flashes or Below Threshold: Op webpagina’s mag er geen enkel element 3 keer of meer binnen een seconde flitsen.
-
-## Wat nu?
-Tips:
-Low hanging fruit (makkelijk te bereiken oplossing) Gebruik de 4 hoofdonderwerpen.
-1 Percievable: Kan de content door iedereen waargenomen worden?
-2 Operable: Kan de content door iedereen bereikt en gebruikt worden?
-3 Understandable: Kan deze content door iedereen begrepen worden?
-4 Robust: Is de techniek achter mijn digitale product semantisch correct opgebouwd?
-
-## Allerbelangrijkste tips
-Luister een keer met een screenreader
-- MacOS is VoiceOver
-- Windows NVDA
-Gebruik je toetsenbord
-Test met je doelgroep
-
-
-
-
+### Final Thoughts (or a TLDR)
+The "Weekly Nerd" session underscored the importance of inclusive design practices in digital environments. By implementing WCAG guidelines and testing for accessibility, developers can create more accessible and user-friendly digital experiences that cater to diverse user needs effectively. Embracing accessibility isn't just about compliance; it's about ensuring equal access and usability for everyone, regardless of ability.

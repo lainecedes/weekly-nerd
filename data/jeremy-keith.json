@@ -8,6 +8,6 @@
     "category": ["#browsertechnologies", "#forms", "#validation", "#buildingblocks", "#html", "#css"],
    
     "markdownFilePath": "markdown/jeremy-keith.md",
-    "reflection": "tba",
-    "use": "tba"
+    "reflection": "I’m not really fan when it comes to forms, but Jeremy Keith's lectures between the lessons was an informative one for form design. Balancing user accessibility with technical efficiency and leveraging semantic HTML and JavaScript did motivate me to create more progressive enhanced, user-centric web experiences. These are useful points to integrate into my projects, where I can aim to deliver accessible and innovative solutions that evolve with the latest trends in web development.",
+    "use": "I sometimes struggle a lot with making good forms and it's generally a tricky one to make, so keeping these bullet points in my notes will help a lot. Maybe I can add it along with my toolkit, which Jeffery Arts inspired me to do."
 }

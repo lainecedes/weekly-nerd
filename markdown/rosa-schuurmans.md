@@ -1,58 +1,31 @@
+## Exploring Creative Coding and Circuit Bending with Rosa Schuurmans
 
-Oud CMD student, deed ook de minor Web
-Doet nu master in Experimental Publishing
+Rosa Schuurmans, a former CMD student with a minor in Web, is currently pursuing a master's degree in Experimental Publishing, diving deep into the realms of creative coding and circuit bending. Her journey after CMD has been as diverse as it is inspiring, ranging from roles as a UX designer to delving into React development.
 
-Als in creative boekhouden
+### Post-CMD Journey
 
-Leven na CMD:
-- UX designer of
-- (React) developer
+Following her time at CMD, Rosa immersed herself in various creative ventures:
 
-Mini CV na CMD
-- Elastique/Wetteloos als digital creative, 5 jaar
-- 1/2e De(fine) art aan WKDA
-- A Vitrinekast was born?
-- NU: NFA master XPUB aan Piet Zwart
-- Workshops, synthesizers, vrijwilliger bij de radio, websites bouwen
+- Worked at Elastique/Wetteloos as a digital creative for five years.
+- Explored the world of art and experimental media at WKDA.
+- Co-founded "A Vitrinekast," a project likely born from her creative experiments and interests.
+- Currently pursuing a master's in XPUB (Experimental Publishing) at Piet Zwart Institute, focusing on pushing the boundaries of digital publishing.
+- Engages in workshops, synthesizers, volunteers at a radio station, and continues to build websites.
 
-## Creative Coding and Circuit Bending
+### Creative Coding and Circuit Bending
+Rosa is known for her innovative approach to creative coding and circuit bending, manipulating electronic devices' circuits to create new musical or visual instruments. This practice involves bending existing frameworks to generate something entirely novel. Her "Vitrinekast soundsystem" project, rooted in 1970s electronic art and unstable media, exemplifies her experimental spirit and DIY ethos.
 
-Creative manipulatie van circuits in elektronische apparaten om nieuwe muziek of visuele instrumenten te creëren 
-Ombuigen van bestaande frameworks: bestaande dingen iets nieuws maken
-Vitrinekast soundsystem
-Oorsprong in jaren 70
-Begin van de elektronische kunst / unstable media
-‘Immediate canvas’ -> geen voorkennis
-Samen: in workshop
-1x gegeven bij Grafisch Lyceum
+### It's a Lifestyle
 
-It’s a lifestyle
-Side effects may include:
-- Een ongekend enthousiasme voor afdankertjes
-- Alles wordt maakbaar
-- Weg met de black box
+For Rosa, creative coding and circuit bending aren't just hobbies; they embody a lifestyle. She thrives on transforming discarded items into artistic expressions and believes in demystifying the "black box" of technology. Her approach mirrors the "inspect element" feature in browsers, where she sees websites as canvases for creative manipulation and experimentation.
 
-Heel erg te vergelijken met de inspect element onderdeel in je browser, je kan ook je website ‘circuit benden’
-remixCloud, js script die ze heeft gemaakt
-Alle elementen die dus alle kanten op gaan (doet het nu helaas niet meer)
+### Conclusion
 
-Andere software op oude apparaten is ook circuit bending 
+Rosa's philosophy encourages challenging the status quo and embracing creative exploration:
 
-## Conclusie
-De status-quo niet per definitie accepteren
+- She advocates for tools like Pure Data and GameMaker Studio to empower creative expression.
+- She finds inspiration in Amsterdam's vibrant creative scene, including venues like OT301 and events like Fiber Festival and Hackers and Designers.
+- She encourages aspiring creatives to surround themselves with inspiring people and companies, urging them to seek internships where innovation and creativity thrive.
 
-Let the games begin:
-- pure data
-- GameMaker Studio : kan je Stardew valley achtige games maken
-
-Amsterdam:
-OT301
-Fiber Festival
-INC
-Hackers and Designers Het HEM
-LI-MA
-
-
-Creative Coding Utrecht
-
-Omring jezelf met mensen die je inspireren bedrijven vaarvan je vindt dat ze vette dingen dien en loop daar stage
+### Too long, didn't read?
+Rosa Schuurmans embodies the spirit of innovation and experimentation in digital arts and technology. Her journey from CMD to experimental publishing is a testament to the limitless possibilities of creative coding and circuit bending, urging others to challenge conventions and explore the untapped potential of technology and art.
