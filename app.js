@@ -3,6 +3,7 @@ const fs = require('fs');
 const marked = require('marked');
 const path = require('path');
 const hljs = require('highlight.js');
+const { parse } = require('date-fns');
 const app = express();
 const port = 3000;
 
@@ -25,32 +26,60 @@ function shuffleArray(array) {
     return array;
 }
 
+// Sort the lecturers by date
+function sortLecturersByDate(lecturers) {
+    return lecturers.slice().sort((a, b) => {
+      const dateA = parse(a.date, 'dd-MM-yyyy', new Date());
+      const dateB = parse(b.date, 'dd-MM-yyyy', new Date());
+
+      // Reverse, so that most recent one is the first one
+      return dateB - dateA; 
+    });
+  }
+  
+
+// function to count JSON files as number of blogs
+function countJsonFiles(directory) {
+    return fs.readdirSync(directory).filter(file => path.extname(file) === '.json').length;
+}
+
 const markdownPath = path.join(__dirname, './markdown');
 const jsonPath = path.join(__dirname, './data');
+const lecturersFilePath = path.join(jsonPath, 'shuffledLecturers.json');
+const jsonFilesCount = countJsonFiles(jsonPath);
 
-// hardcoded lecturers with generated url's
-const randomLecturers = [
-    { username: '@jeffery.arts', href: '/lecturer/jeffrey-arts', img: "../images/jeffrey-arts.jpeg",  date: "28-02-2024",  tweet: "A self made artist with a cool dev toolkit. Check out my stuff at jeffreyarts.nl", name: "Jeffrey Arts" },
-    { username: '@fennadew', href: '/lecturer/fenna-de-wilde', img: "../images/fenna-de-wilde.jpeg", date: "14-02-2024", tweet: "Check out my tips for building accessible sites here!", name: "Fenna de Wilde" },
-    { username: '@hackathon', href: '/lecturer/hackathon', img: "../images/hackathon-css-day.jpeg", date: "25-03-2024",  tweet: "Why touch grass when u can make cool shiny globe with data for CSS Day that WORKS", name: "Hackathon" },
-    { username: '@adactio', href: '/lecturer/jeremy-keith', img: "../images/jeremy-keith.jpeg", date: "13-03-2024", tweet: "I got to teach students at the AUAS about Browser Technologies.", name: "Jeremy Keith" },
-    { username: '@julia_miocene', href: '/lecturer/julia-miocene', img: "../images/julia-miocene.jpeg", date: "18-03-2024", tweet: "I make cool and complex animations with pure CSS. 🙂‍↕️", name: "Julia Miocene" },
-    { username: '@kilianvalkhof', href: '/lecturer/kilian-valkhof', img: "../images/kilian.jpeg",  date: "07-02-2024", tweet: "Using Javascript? When HTML and CSS is right there? Be serious for once", name: "Kilian Valkhof" },
-    { username: '@digitaaltoegankelijk', href: '/lecturer/pim-marieke', img: "../images/digitaal-toegankelijk.png", date: "03-04-2024", tweet: "Making websites just anyhow 🙂‍↔️, Making websites with accessibility and POUR in mind 🙂‍↕️",  name: "Marieke en Pim" },
-    { username: '@roberrrt_s', href: '/lecturer/robert-spier', img: "../images/robert-spier.jpeg", date: "15-05-2024",  tweet: "Get to work BITCH.", name: "Robert Spier" },
-    { username: '@rosaschuurmans', href: '/lecturer/rosa-schuurmans', img: "../images/rosa-schuurmans.jpeg", date: "10-04-2024", tweet: "Do not necessarily accept the status-quo like that.", name: "Rosa Schuurmans"},
-    { username: '@supremebeing09', href: '/lecturer/nils-binder', img: "../images/nils-binder.jpeg", date: "06-03-2024", tweet: "Grids and container queries are cool ykno", name: "Nils Binder"}
-];
+fs.readFile(lecturersFilePath, 'utf8', (err, data) => {
+    if (err) {
+        console.error('Error reading lecturers JSON file:', err);
+    } else {
+        randomLecturers = JSON.parse(data);
+    }
+});
+
 
 app.get('/', (req, res) => {
+     // First, use the original structure of randomLecturers to make a timeline
+    const timelineLecturers = sortLecturersByDate(randomLecturers);
+
+    // then, make a shuffled one to showcase random lecturers at the side bar
     const shuffledLecturers = shuffleArray(randomLecturers);
-    res.render('index', { shuffledLecturers });
+    res.render('index', { shuffledLecturers, timelineLecturers, blogs: jsonFilesCount });
 });
 
 app.get('/learning-goals', (req, res) => {
     const shuffledLecturers = shuffleArray(randomLecturers);
     res.render('learning-goals', { shuffledLecturers });
 });
+
+
+app.get('/favorite', (req, res) => {
+    const favorites = JSON.parse(req.query.favorites || '[]');
+    const favoriteLecturers = randomLecturers.filter(lecturer => favorites.includes(lecturer.username));
+
+    res.render('favorites', { favoriteLecturers });
+});
+
+
 
 // Function to handle the /lecturer/:url route
 app.get('/lecturer/:url', (req, res) => {

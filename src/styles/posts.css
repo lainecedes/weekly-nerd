@@ -11,7 +11,7 @@
     }
 
     li {
-        color: var(--twitter-blue);
+        color: var(--twitter-pink);
         text-wrap: wrap;
         list-style: none;
     }
@@ -114,7 +114,7 @@
     }
     
     .tweet-action-button {
-        background-color: var(--twitter-blue);
+        background-color: var(--twitter-pink);
         color: var(--white);
         border: none;
         padding: 5px 10px;
@@ -167,7 +167,7 @@
     
     .suggestions ul li a {
         text-decoration: none;
-        color: var(--twitter-blue);
+        color: var(--twitter-pink);
     }
     
 
@@ -187,7 +187,8 @@
 
     img {
         width: 4em;
-        border-radius: 0.5em; /* Optional: Add this for rounded corners */
+        border-radius: 0.5em;
+        background-color: pink;
     }
 
     .comment-content {

@@ -1,91 +1,97 @@
-Fenna de Wilde is een creative (front end) developer die werkt bij de Noorse design studio Bakken en Baeck. Ze is een oud student die de minor Web Design and Development heeft gevolgd bij het Hogeschool van Amsterdam.
+Fenna de Wilde is a creative developer working at Norwegian design studio Bakken and Baeck. She is a former student who also did the minor in Web Design and Development at the Hogeschool van Amsterdam.
 
-Ze heeft een paar mooie websites ontworpen, zoals de websites van de bedrijven Moooi, een luxe interieurswinkel, en Phantom, een crypto wallet. Ze maakt vooral websites die playful en vriendelijk oogt, met veel animaties en interactieve elementen.  
+She has designed some great websites, such as the websites of the companies Moooi, a luxury interior design store, and Phantom, a crypto wallet. She mainly creates websites that look playful and friendly, with lots of animations and interactive elements.  
 
-## Toegankelijkheid
-Als het gaat over toegankelijkheid en websites wordt er ook gezegd dat niemand er om geeft omdat het over het hoofd wordt gezien. 
+## Accessibility
+When it comes to accessibility and websites, it is also said that no one cares because it is overlooked. 
 
-Fenna heeft dus hier aandacht in gestoken en heeft dus een 'accesibility case study' gemaakt, om te kijken hoe ze de website Phantom zo toegankelijk mogelijk kan maken. 
+So Fenna paid attention to this and thus created an "accessibility case study," to see how she could make the website Phantom as accessible as possible. 
 
-## Phantom en the accessibility case study
+## Phantom and the accessibility case study
 
 ### Dev Stack
 
-Fenna en haar bedrijf gebruiken een development stack om websites te bouwen:
+Fenna and her company use a development stack to build websites:
 
-- Next.JS met React
-- Emotion (is een css in JS library)
-- Deployen op Vercel
-- Sanity, een headless CMS
-- Animaties maken in Framer Motion
+- Next.JS with React
+- Emotion (A CSS in JS library)
+- Deploying on Vercel
+- Sanity, a headless CMS
+- Creating animations in Framer Motion
 
 
-## Focus state for keyboard gebruikers
-Niet iedereen gebruikt muis of touch en hebben beperkingen dus kan je dit toepassen zodat deze mensen de site ook kunnen gebruiken
-:focus-visible en geen globale styling maar probeer het per element de definiëren
+## Fenna's observations and tips
+Fenna shared some observations and tips that she discovered while working on the Phantom case study. Here are a few useful ones:
 
-## Aria attributes
-ARIA staat voor Accessible Rich Internet Applications. Dit zijn attributen en roles die aanvullende info geven aan elementen die niet goed beschrijvend genoeg zijn. 
+### Focus state for keyboard users
+Not everyone uses mouse or touch and have limitations so you can apply this so these people can use the site too
+focus-visible and no global styling but try to define it per element.
 
-**Aria-label** geeft label aan beschrijvende tekst voor elementen die geen zichtbare label hebben, handivoor ui elementen zoals buttons met icons of gevallen waarin zichtbare tekst te weinig context geeft.
+### Aria attributes
+ARIA stands for Accessible Rich Internet Applications. These are attributes and roles that give additional info to elements that are not well descriptive enough. 
 
-**Aria-controls** wordt gebruikt arm een bedieningselement t te koppelen aan het element dat het controleert, voor screen readers, meer verbinding begrijpen en meer context bieden.
+**Aria-label** gives label to descriptive text for elements that have no visible label, handivoor onion elements such as buttons with icons or cases where visible text gives too little context.
 
-**Aria-expanded** geeft de status aan van een element dat kan worden uitgeklapt en ingeklapt zoals een accordion, dropdown menu, hamburgermenu en het schakelt tussen de states true en false
+**Aria-controls** is used arm a control t link to the element it controls, for screen readers, understand more connection and provide more context.
+
+**Aria-expanded** indicates the state of an element that can be expanded and collapsed such as an accordion, dropdown menu, hamburger menu and it switches between the states true and false
 
 **ARIA live**
-Met js kan je dynamisch dingen veranderen zonder de pagina de herladen, mensen die zien zijn direct zichtbaar maar voor screen readers worden nieuwe berichten niet automatisch voorgelezen, en deze vertelt te screenreader om veranderingen onmiddellijk aan te kondigen
-Waardes= off, Polite, Assertive
+With js you can dynamically change things without reloading the page, people who see are immediately visible but for screen readers new messages are not automatically read out, and this tells to screen reader to announce changes immediately
+Values= off, Polite, Assertive
 
 **Aria atomic**
-Waardes false and true, hoe worden de updates namens screenreader
+Values false and true, how are the updates on behalf of screenreader
 
-## Toegankelijke carousels
+### Accessible carousels
 In html:
-Carousel moet een role=‘’region’ hebben of semantisch element section
-`Aria-roledescription=“carousel”`
-En aria-labelledby of aria-label, hangt ervan af als er een titel beschikbaar is
-Titel = area-labelledby
-Geen titel - aria-label
+Carousel must have a role=''region'' or semantic element section
+`Aria-roledescription="carousel"`.
+And aria-labelledby or aria-label, depends if a title is available
+Title = area-labelledby
+No title - aria-label
 
-Slide = ```role=“group”```
-Aria-label om te laten weten op welke slide je bent
-Als de  slide niet zichtbaar is = ```aria-hidden=‘true’``` aan wrapper en ```tabindex=‘-1'``` aan alle children die focusable zijn.
-En vermijd de list items voor het maken van slides omdat de aantal li items zal overeenkomen met de werkelijke aantal slides.
+Slide = ```role="group"```
+Aria-label to let you know which slide you are on
+If slide is not visible = ```aria-hidden='true'``` to wrapper and ```tabindex='-1'``` to all children that are focusable.
+And avoid list items for creating slides because the number of li items will match the actual number of slides.
 
-Carousel controls buttons moet een ```role=‘group’``` hebben op de container
-Control button die huidige slide laat zien heeft ```aria-disabled=‘true’```
+Carousel controls buttons should have a ```role='group'``` on the container
+Control button that shows current slide has ```aria-disabled='true'````
 
-## Focus guards en esc key configuraties
-Deze zorgen ervoor dat gebruikers met keyboard binnen de modal kunnen navigeren zonder per ongelijk weg te klikken. De focus wordt gewoon gelijk naar de close button gestuurd. Dialog modal is een voorbeeld hiervan.
+### Focus guards and esc key configurations.
+These allow keyboard users to navigate within the modal without accidentally clicking away. The focus is simply sent right to the close button. Dialog modal is an example of this.
 
-Als je dat niet kan gebruiken gebruik dan een bpm package gebroken zoals react-focus-lock, react-aria-components
+If you can't use that then use a bpm package broken like react-focus-lock, react-aria-components
 
-## Goede kleurcontrasten
-- WAI kleurcontrast formule (zoek op)
-- 1 tot 21
-- Puur zwart tegen wit heeft contrast van 21:1
-- Je hebt hiervoor ook een Figma plugin
+### Good color contrasts
+- WAI color contrast formula (look up)
+- 1 to 21
+- Pure black against white has contrast of 21:1
+- You also have a Figma plugin for this
 - Lighthouse-audit
-- DevTools in Chrome en Firefox
+- DevTools in Chrome and Firefox
 
-## Lettergroottes
-Vermoeide ogen voorkomen minimaal 16 px
+### Font sizes
+Avoid eyestrain at least 16 px
 
-## Lijnlengtes
-- Regellengte van 50 tot 75 tekens inclusief spaties, ideaal
-- Ch (character) unit kan je gebruiken voor de tekst. Dus bijv 50ch is 50 woorden.
+### Line lengths
+- Line length of 50 to 75 characters including spaces, ideal
+- Ch (character) unit you can use for the text. So e.g. 50ch is 50 words.
 
-## Alt tekst voor afbeeldingen
-- Vermijd het zeggen van ‘afbeelding van ‘ in de alt tekst
-- Goede beschrijving
-- Seo toevoegen
+### Alt text for images
+- Avoid saying 'image of' in the alt text
+- Good description
+- Add seo
 
-## Correcte semantiek
-Juiste HTML elementen
+### Correct semantics
+Correct HTML elements
 
-## Wat kan je nog meer doen?
+### What else can you do?
 - Skip to content button
 - Prefers-reduced-motion
-- Alle autoplay videos/carousels moeten gepauzeerd worden
-- Zelf een screenreader gebruiken
+- All autoplay videos/carousels should be paused
+- Use a screenreader yourself
+
+### Too long, didn't read?
+In this lecture, Fenna de Wilde, a creative developer at Bakken and Baeck, emphasizes accessibility in her playful, animation-rich websites. Utilizing a stack that includes Next.JS, React, and Framer Motion, she created an accessibility case study for the Phantom website. Key tips from her study include using focus states for keyboard users, implementing ARIA attributes, ensuring accessible carousels, maintaining good color contrast and font sizes, and using correct semantics and alt text for images.

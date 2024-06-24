@@ -6,7 +6,7 @@
 
 
 
-// Favorite button
+// Favorite
     document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('.favorite-button').forEach(button => {
             button.addEventListener('click', () => {

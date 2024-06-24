@@ -6,8 +6,7 @@
     "week": "7",
     "url": "hackathon",
     "category": ["#hackathon", "#cssday", "#sveltekit", "#frameworks", "#cmd"],
-    "tweet": "Why touch grass when u can make cool shiny globe with data for CSS Day that WORKS",
-    "quote": "",
+   
     "markdownFilePath": "markdown/hackathon.md",
     "reflection": "tba",
     "use": "tba"

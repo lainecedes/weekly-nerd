@@ -1,0 +1,13 @@
+{
+    "name": "Pre CSS Day",
+    "img": "../images/pre-css-day.jpeg",
+    "username": "@cssday",
+    "date": "07-06-2024",
+    "week": "12",
+    "url": "pre-css-day",
+    "category": ["#css", "#html", "#talks", "#miriamsuzanne", "#bramusvandamme"],
+    
+    "markdownFilePath": "markdown/q42.md",
+    "reflection": "tba",
+    "use": "tba"
+}

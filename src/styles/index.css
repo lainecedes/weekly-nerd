@@ -8,6 +8,7 @@ html {
     --black: #000;
     --twitter-blue: #1da1f2;
     --twitter-yellow: rgb(241, 201, 0);
+    --twitter-pink: #da076c;
     --grey: #657786;
 }
 
@@ -66,15 +67,20 @@ header {
 
     width: 100vw; 
     height: 35vh; 
-    background-image: url('../images/achtergrond.jpeg');
+    background-image: url('../images/kirby.jpeg');
     background-size: cover;  
-    background-position: center; 
+    background-position: center calc(50% + 5em); /* Adjust the vertical position */
 
     z-index: -100;
   }
   
 
 .user-white-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
     position: relative;
     bottom: -14em;
 
@@ -83,17 +89,32 @@ header {
     background-color: var(--white);
 
     ul {
-        height: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
+        gap: 1.5em;
+        margin: 0;
+        padding: 0;
+
     }
 
-    ul li {
+    li {
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
 
         list-style: none;
+        align-items: center;
+        text-align: center;
+        font-size: 0.7em;
+        color: var(--grey);
+    }
+
+    li span {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: var(--twitter-pink);
     }
 
   }
@@ -149,6 +170,34 @@ header {
     color: var(--grey);
 }
 
+.index .profile p:nth-of-type(1) {
+     margin: 0;
+}
+
+.index .profile ul {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.9em;
+    gap: 0.5em;
+
+
+    li {
+        display: flex;
+        gap: 0.5em;
+        list-style: none;
+        
+    }
+
+    li:nth-of-type(2) a {
+        margin-left: -4px;
+        text-decoration: none;
+        color: var(--twitter-pink);
+    }
+}
 
 
 
@@ -163,7 +212,7 @@ header {
     gap: 1em;
 
     > img {
-        width: 4em;
+        width: 3.5em;
         border-radius: 0.5em;
         box-shadow: 1px 1px 2px var(--grey);
     }
@@ -204,7 +253,7 @@ header {
 
     a {
         text-decoration: none;
-        color: var(--twitter-blue);
+        color: var(--twitter-pink);
     }
 
     img {
@@ -248,7 +297,8 @@ header {
 
     .suggestions ul li a {
         text-decoration: none;
-        color: #1da1f2;
+        color: var(--twitter-pink);
+        background-color: white;
     }
 
 }

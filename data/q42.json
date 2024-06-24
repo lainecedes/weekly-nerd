@@ -1,0 +1,13 @@
+{
+    "name": "q42",
+    "img": "../images/q42.png",
+    "username": "@q42",
+    "date": "22-05-2024",
+    "week": "10",
+    "url": "q42",
+    "category": ["#developer", "#accessibility", "#internship"],
+  
+    "markdownFilePath": "markdown/q42.md",
+    "reflection": "tba",
+    "use": "tba"
+}
