@@ -191,6 +191,10 @@
         background-color: pink;
     }
 
+    h2:nth-of-type(1) {
+        margin-top: 0;
+    }
+
     .comment-content {
         flex: 1;
     }
