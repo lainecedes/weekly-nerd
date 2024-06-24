@@ -1,40 +1,63 @@
-9elements: technology and design< they have a structure with 3 different units
+## Meet Nils Binder: A Key Player at 9elements
+Nils Binder is a prominent figure at 9elements, a company known for its integration of technology and design. At 9elements, the structure is divided into three distinct units:
 
-*  communication design: corporate and print stuff logo’s non coding designers, lot of them are non coding designers. 4 people
-* product development. banking, photobook software, data visualisation, Schalke 04 mobile app, 30 people
-* web development: produce small to medium sized websites, 6 people
-* cyber security department but they don’t do any, they do firmware
-Passionate about origami
-He’s head of the web development unit but works closely together
+Communication Design: This team focuses on corporate and print design, including logos. Comprising four people, many of whom are non-coding designers, this unit handles the visual identity of various brands.
 
-## The wrapper element
-Container for website does 3 things:
-* sets max width 
-* adds a little bit of padding
-* centers the content (not always, most of the time)
-How to build ?
-* .wrapper {
-    * Max-width 75rem
-    * margin: 0 auto
-    * Padding: 0 1.5rem }
-instead: 
-* .wrapper {
-    * Width: min(100% - 3 rem, 75rem);
-    * Margin-inline: auto }
-Or even shorter: 
-* .wrapper {
-    *  margin-inline: max(1.5rem,((100% - 75rem) /2)); }
-You can change the max width to custom property
+Product Development: This is the largest unit with 30 people. They work on diverse projects such as banking software, photobook software, data visualization, and the Schalke 04 mobile app.
 
-## Why do we do this? 
-Figma is better than Photoshop because Figma tools are close to writing code, introduced 6 years ago.
-Pic of quote
-Units that are available in Figma are px, % and rem, but mostly pixels
-CSS: px, % rem, ch, ex, em
-Lot of viewport based units, including container queries etc
+Web Development: Headed by Nils Binder, this team produces small to medium-sized websites and consists of six people. Despite his leadership role, Nils collaborates closely with other units to ensure seamless integration across projects.
 
-## Nils' sources
-Dasruhrgebiet.de 
-Bryck.com 
+Additionally, 9elements has a cyber security department that specializes in firmware, although they do not engage in traditional cyber security tasks.
+
+Outside of his professional life, Nils is passionate about origami, which reflects his intricate and detail-oriented approach to both his hobbies and his work.
+
+### The Wrapper Element in Web Development
+Nils Binder emphasizes the importance of the wrapper element in web development. A wrapper serves as a container for the website content, performing three crucial functions:
+
+Setting a Maximum Width: Ensures the content does not stretch too wide on large screens.
+Adding Padding: Provides space around the content for better readability and aesthetics.
+Centering the Content: Typically centers the content, although this is not always necessary.
+Here’s how to build a wrapper element:
+
+```
+.wrapper {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+```
+
+Alternatively, you can use a more concise version:
+
+```
+.wrapper {
+    width: min(100% - 3rem, 75rem);
+    margin-inline: auto;
+}
+```
+
+Or a even shorter version:
+
+```
+.wrapper {
+    margin-inline: max(1.5rem, ((100% - 75rem) / 2));
+}
+```
+
+You can also customize the max-width by changing it to a custom property.
+
+### Why This Approach?
+Nils believes that Figma, introduced six years ago, is superior to Photoshop because its tools closely mimic writing code. This makes the transition from design to development smoother. In Figma, the units available are primarily pixels (px), percentages (%), and rems (rem), which aligns well with the units used in CSS such as px, %, rem, ch, ex, and em. This consistency facilitates a more efficient design-to-development workflow, especially with the inclusion of viewport-based units and container queries in CSS.
+
+Nils' Go-To Resources
+For inspiration and staying updated, Nils frequently visits Dasruhrgebiet.de and Bryck.com. These resources provide valuable insights and keep him informed about the latest trends and technologies.
+
+
+### Too long, didn't read?
+Nils Binder’s role at 9elements, combined with his passion for origami and dedication to efficient web development practices, makes him a standout professional in the field. His expertise and innovative approach continue to drive the success of 9elements, ensuring high-quality outcomes for their diverse range of projects.
+
+
+
+
 
 
