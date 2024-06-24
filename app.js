@@ -106,8 +106,6 @@ app.get('/lecturer/:url', (req, res) => {
 
            
             const shuffledLecturers = shuffleArray(randomLecturers);
-            console.log(shuffledLecturers);
-
             res.render('lecturer', { blogPost, lecturerData, shuffledLecturers });
         });
     });
