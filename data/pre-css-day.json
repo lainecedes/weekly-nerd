@@ -8,6 +8,6 @@
     "category": ["#css", "#html", "#talks", "#miriamsuzanne", "#bramusvandamme"],
     
     "markdownFilePath": "markdown/q42.md",
-    "reflection": "tba",
-    "use": "tba"
+    "reflection": "In fact, I didn't even know there was a pre css day. The fact that anyone could come and attend the lectures was nice though. The people who don't have tickets for CSS Day also got the chance to experience it. Apart from the extra explanation of container queries, I now know how view transitions work, I always see this passing by but didn't really understand what to do with it until I saw that it was basically powerpoint in code, single page as on multi page. It is limited, but yes because it is new, so I am secretly curious about the future of these topics.",
+    "use": "I’d probably try out these view transitions. I do have some ideas where I could make a website into a big slideshow, funny to know how that will turn out when I will use animations and other perks that comes with it."
 }

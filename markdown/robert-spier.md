@@ -1,179 +1,68 @@
-## Aan het werk, wat nu?
-Gaat vertellen over van alles
-Was coordinator van Blok Tech, en ook Web
-Werkt bij een consultancy, hij is hier student geweest
+## From Classroom to Career: Insights from Creative Technologist Robert Spier
 
-Creative Technologist, Digital Factory team at Deloitte
+Today's session features Robert Spier, a Creative Technologist from Deloitte's Digital Factory team. Robert, who once walked the halls as a student here, now coordinates tech initiatives and engages in front-end development. In his talk, he shares valuable insights about his journey, his role, and what it takes to succeed in the tech industry.
 
-What is today abaout?
-About him, and quite a lot about us.
+### A Day in the Life of a Creative Technologist
+Robert describes his role as a "digital superhero," blending front-end development with research in emerging technologies. He conducts qualitative research with users, identifies and manages stakeholders, and devises creative solutions for complex problems. Automation is a key passion for him, aiming to streamline processes wherever possible.
 
-Interactieve presentaties, wat is een creative technologist? Digital superhero
-Frond end developement met hobbies
+His tech stack includes HTML, CSS (Sass), and JavaScript, with a strong reliance on Vite and SvelteKit. While he occasionally uses Angular, .NET, Node.js, and Azure, he thrives on creating magical solutions using various REST APIs and npm modules. He prefers working in terminal but appreciates the clean interface of VSCode and GitHub Desktop.
 
-I do front end
-I doresearch in emerging technologies
-I conduct qualitative research with users
-I Idenfty and manage stakeholders?
-Try to come up with super creative solutions for obscure problems
-I Love to automate everything.
+### Engaging with the Audience
+His presentation isn’t just about him, he’s keen to learn about his audience. He posed questions to us students, encouraging us to envision their future careers. Do we aspire to be creative developers? Would we prefer working in a design agency, startup, webshop, as freelancers, or in a corporate setting? He emphasizes that CMD offers a broad foundation to achieve any of these career paths.
 
-Lots of teams meetings
+### Alumni Success Stories
+He shared some examples of alumni to highlight various career trajectories:
 
-Build stuff html css (sass) javascript
-Rely heavily on vite ans sveltekit
-He relies barely on Angular, uses some .net/nodejs and azure
-He makes magical stuff using several rest api and npm modules
-I work in terminal but prefer vscode clean and github desktop
+- Alumni 1 (2022): Working in detachment at Energy, using Angular and Tailwind, earning €3000/month.
+- Alumni 2 (2023): Completed a traineeship in Finance, using Vue and Bootstrap, earning €2900/month.
+- Alumni 3 (2017): Freelancing in Bali for a design studio, using React/Next and Sanity, earning €80/hour or €2100/month.
+- Alumni 4 (2023): Employed at a full-service agency, using SvelteKit and Vite, earning €2600/month.
 
 
-## Enough about him, now about.. us!
-He has some questions for us all?
-What do we want to be when we grow up? I want to be a creative developer
+### Navigating the Job Market
+Robert emphasizes the importance of staying informed and adaptable to changes in the job market. Factors such as inflation, evolving job roles, flexibility, and workplace culture all influence career choices. He advises students to:
 
-CMD is a ideal course to be everything
+- Learn fundamentals: A strong foundation is crucial.
+- Remain curious: Always seek new knowledge and experiences.
+- Stay informed: Keep up with industry trends and changes.
+- Enjoy discovering: Find joy in learning and exploring new technologies.
+- Exploring different types of employers
 
-Where would you like to work when you grow up?
-Design acency
-Startup
-Webshop
-Freelance
-Corporate
-Or none of the above?
+He further outlined various employer types, each with unique advantages and disadvantages such as:
+- Freelancing
+- Traineeships
+- Detachment
+- Design Studios
+- Full-Service Agencies
+- In-House Services
 
-## What do you want to do when you grow up?
-zie foto's
+He also acknowledges that some may choose to continue studying or pursue completely different paths.
 
+### The Technology Stack
+Robert discusses his favorite programming languages, emphasizing the importance of mastering the basics to learn new technologies quickly. While he prefers not to work with React or Next, he encouraged us to explore and find their own preferences. Popular languages and frameworks include NodeJS, React, jQuery, Express, Angular, and Vue.
 
-Let's talk about us?
-Lets say, it's now July 2025. Or later... We've
-Keep thinking about what you would like to do later/
+### Understanding Compensation
+Robert addresses the topic of salary, stressing the need to balance money with benefits. Key considerations include:
 
-What did other students do?
+- Money vs. Benefits: Travel reimbursement, vacation money, pension, development budget, bonuses, profit sharing, stock options, flexible budgets, and a car.
+- Bruto vs. Netto: Gross versus net income.
+- Fulltime vs. Parttime: Different work arrangements.
 
-Alumni 1
-- 2022
-- Detachiering (@ Energy)
-- Angular + Tailwind
-- 3000,-
+He advises discussing salary expectations with peers, using the internet for research, and calculating monthly costs to determine a fair salary.
 
-Alumni 2 
-- 2023
-- Traineeship (@ Finance)
-- Vue + Bootstrap
-- 2900,-
+### The Importance of Workplace Culture
+Beyond salary, Robert highlights the significance of workplace culture. Factors like early leave on Fridays, awesome colleagues, fun outings, proximity to home, and project autonomy contribute to job satisfaction. However, these perks should not replace fair compensation and realistic job expectations.
 
-Alumni 3
-- 2017
-- Freelance / Design Studio (Bali)
-- React/Next + Sanity
-- 80 euro a h or 2100 
+### Too long, didn't read + final thoughts
+So the lecture concludes with key takeaways for us students:
 
-Alumni 4
-- 2023
-- Full-service agency
-- SvelteKit + Vite
-- 2600
+Discuss the benefits: Engage in conversations with classmates.
+Do your own research: Stay informed and proactive.
+Say no when necessary: It’s okay to reject offers that don't meet your expectations.
+Find joy in your job: Ensure the job aligns with your passions and makes you feel recognized.
 
+Robert encourages students to build their own projects and learn by doing. Networking is crucial; meeting people, reaching out, and developing soft skills can open doors even without a portfolio. His parting advice: "You already have a 'no,' why not ask for a 'yes'?"
 
-Five points that play along when searching for a job
-
-2017 vs 2025
-- inflation
-- job roles
-- flexibility
-- and culture
-
-It is your responsibility to stay up to date in order to respond to these changes.
-
-Learn fundamentals
-Remain curious
-Stay informed
-Enjoy discovering
-
-
-### Type of employer
-Freelancing
-Traineeship
-Detachiering
-Design studio
-Full servoce agency
-in house services
-
-or continue studying or doing something completely different.
-
-All of these have their own advantages and disadvantages
-
-
-### The Stack
-Favoriete programmeertalen van het persoon
-You cab learn everything once you know the basics. Everything is basically the same.
-
-Please never ask me to write React of Next
-But maybe you love it, give it a chance
-
-Most popular languages
-- NodeJS
-- React
-- jQuery(!)
-- Express
-- Angular
-- Vue
-
-He basically learns new languages, frameworks and technologies every year (and pretend to know then fluently on LinkedIn).
-
-### The Money
-How much do you want to earn?
-
-Money vs Benefits
-Bruto vs Netto
-Fulltime vs Parttime
-
-So what is a good salary?
-- Discuss with each other
-- Use the internet / apply to job
-- Calculate your monthly costs
-
-A normal salary is what you can do, combined with how your peers are ceing evaluaied and how much your company can pay.
-
-
-Benefits?
-- Travel reinbursement
-- Vacation money
-- Pension building?
-- Development budget?
-- Bonus?
-- Profit sharing?
-- Stock options?
-- Flexible budget?
-- A car?
-
-Important of this all: Balance
-
-### The Vibe
-Immaterial recognition
-(yeah dude this place is awesome)!
-- Leaving early on a Friday?
-- Awesome colleageles and mentoring
-- Fun Outings and drinks
-- Very close to home
-- Loads of autonomy in projects?
-
-That being said, it is no subsitute to a fair and honest salary combined with realistic experience of a junior.
-
-Conclusion:
-- Discuss benefits with your classmates
-- Do your own reseaech
-- It is okay to say no to a company
-- Finally: It's your job, you will go there every day. Have fun and feel recognized. That is the most important part!
-
-The best way you learn is by doing your own projects. Tutorials will only get you so far. Go build epic shit!
-It is okay to fail, it's better to build 10 average things than get stuck on a single perfect one.
-Network network network! I never had a portfolio but people still find me because I meet them, reach out to them, interact with them. Soft skills are vital.
-
-You already have no, why not ask for the yes!
-
-
-
+Embark on your journey with confidence, stay curious, and never stop learning. The tech world is vast and full of opportunities waiting for you to explore.
 
 

@@ -8,6 +8,6 @@
     "category": ["#purecss", "#css", "#animations"],
     
     "markdownFilePath": "markdown/julia-miocene.md",
-    "reflection": "tba",
-    "use": "tba"
+    "reflection": "This was more of a oooh and aaah presentation, I was so intrigued by her work that I even forgot to take notes. I’ve never seen making characters and modelling with pure css before, I knew this was possible but I never knew how they did it and even thought that this was in impossible task. Turns out you CAN and it takes a LOT of time. She showed us an entire indie game that she made in CSS and I asked her how long this took, and it took months to make!",
+    "use": "I think this could be of good use if I ever wanted to give my personal site or web app some life with making characters in the background. Also, the css attributes are pretty handy, such as transform-origin for placing animated stuff in the right place. I also immediately had a lot of ideas in my mind that i wanted to test this with, such as making one of my favorite character Kirby and then placing it everywhere for everyone to see like 'HEY, I made this with PURE CSS!' Now I just have to find time to start..."
 }

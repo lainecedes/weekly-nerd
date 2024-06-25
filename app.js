@@ -68,7 +68,7 @@ app.get('/', (req, res) => {
 
 app.get('/learning-goals', (req, res) => {
     const shuffledLecturers = shuffleArray(randomLecturers);
-    res.render('learning-goals', { shuffledLecturers });
+    res.render('learning-goals', { shuffledLecturers, blogs: jsonFilesCount });
 });
 
 
