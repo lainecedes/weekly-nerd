@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <div class="loader-container">
+        <div class="mask-container">
+            <i class="fab fa-twitter twitter-icon"></i>
+        </div>
+    </div>
+
     <main class="index learning-goals">
         <%- include ('partials/header.ejs'); %>
 
@@ -36,37 +42,200 @@
 
 
                 <ul class="tweet-container">
-                        <li class="tweet">
 
-                            <div class="tweet-content">
-                                <div class="tweet-header">
-                                    <img src="../images/lainecedes.png" alt="Elaine's profile picture">
-                                    <h3>⭐️ Elaine ⭐️</h3>
-                                   <a href="#"><span class="tweet-username">@lainecedes</span></a>
-                                    <p class="tweet-date">1 May</p>
-                                </div>
-                                <p class="tweet-text">Learning Goals</p>
-                                <div class="tweet-details">
-                                    <ul>
-                                        <li>
-                                            <p>1. Beter worden in samenwerken want heb nog steeds de neiging om alles zelf te doen terwijl voor meerdere projecten het soms beter is om in een team te zitten.</p>
-                                            <p>2. Eigen tooling pakket bouwen: een standaard pakket hebben waar ik proficient kan worden zodat ik beter web apps kan bouwen. Nu probeer ik van alles en is het een beetje rommelig qua structuur.</p>
-                                            <p>3. Websites voor all en ook all bouwen, meer letten op dat mensen die beperkingen hebben ook je site bezoeken en dit zoveel mogelijk standaard maken. Het feit dat een website goed toegankelijk is (or zelfs gewoon goede en creatieve ondertiteling beschikbaar is in een video zoals bij Marie in HCD) maakt echt zoveel verschil voor de user experience en zorgt ervoor dat ze niet worden buitengesloten en media ook goed kan ervaren.</p>
-                                        </li>
-                                    </ul>
-
-                                    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXA2YWRpaW85d2k5cWp0OHlzdDJldjQ4cjRzcW0wbmoyZ2dwZDVmZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xHDJ1TKo2VNdkqDKw0/giphy.gif">
-                                </div>
-
-                                <!-- Tweet actions -->
-                                <div class="tweet-actions">
-                                    <i class="fas fa-reply"></i>
-                                    <i class="fas fa-retweet"></i>
-                                    <i class="fas fa-star favorite-button"></i>
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </div>
+                    <li class="tweet">
+                        <div class="tweet-content">
+                            <div class="tweet-header">
+                                <img src="../images/lainecedes.png" alt="Elaine's profile picture">
+                                <h3>⭐️ Elaine ⭐️</h3>
+                               <a href="#"><span class="tweet-username">@lainecedes</span></a>
+                                <p class="tweet-date">24 Jun</p>
                             </div>
-                        </li>
+                            <h2 class="tweet-text">Reflection on the Minor</h2>
+                            <div class="tweet-details">
+                                Wagwan. IT'S REFLECTION TIME!
+                                <div class="img-block">
+                                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnFkMm90bGdnNjNtNWFwNXB4MnVhdnRzbjhpdzg5dGppY2E0eXJncyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT8qBtvvf9F5dXnr20/giphy.webp">
+                                </div>
+
+                                <ul>
+                                    <li>
+                                        <h3>How did it go with my learning goals?</h3>
+                                        <p>Before the start of my master thesis, we had the challenge to set up some learning goals that we would work on during the entire project.
+                                            These goals are based on the courses I have taken so far, and from my own personal level.
+                                            </p>
+        
+                                            <ul>
+                                                <li>
+                                                    <h3>1. Working together</h3>
+                                                    <p> Get better at working together in a team because I still tend to do everything myself, 
+                                                        whereas for multiple projects, sometimes it is better to be in a team to get 
+                                                        the job done right.</p>
+
+                                                    <p><strong>This actually came quite naturally, it went well with my learning objective of "working together". 
+                                                        I mostly reflected this in scheduling and managing appointments together, discussing version control 
+                                                        and so on.</strong></p>
+                                                </li>
+        
+                                                <li>
+                                                    <h3>2. Building a toolkit</h3>
+                                                    <p> Wanting to have a standard toolkit with my projects where
+                                                        I can become proficient so I can build web apps better. Now I try all sorts of 
+                                                        things and it's a bit messy in terms of structure.</p>
+
+                                                        <p><strong>This one was quite broad, but I managed to do this by co-leading the project and handling the 
+                                                        packages, plugins and configurations in the framework and the <code class="inline-code">package.json</code>. 
+                                                        I wanted a project with packages and settings that would be most useful to us, 
+                                                        so I also did some research myself, discussed it with the team and implemented 
+                                                        it in the project.</strong></p>
+                                                </li>
+        
+                                                <li>
+                                                    <h3>3. Build for everyone</h3>
+                                                    <p> I want to pay more attention to ensuring that people
+                                                        who have disabilities also visit your site and make this standard as much as possible. 
+                                                        The fact that a website is easily accessible (or even just has good and creative subtitles
+                                                        available in a video like Marie's in HCD) really makes a lot of difference to the user
+                                                        experience, ensuring that they are not excluded and can also experience media properly.</p>
+                                                    
+                                                        <p><strong>I did this by working at the existing design theme that Tumi Mundo had. I took the opportunity to
+                                                        better the contrast, and delved into own additional research on how to do this.</strong></p>
+                                                </li>
+
+                                                <li>
+                                                    <h3>4. Structured working and planning </h3>
+                                                    <p> I have some diffuculties with making a structured planning and working according to that planning.
+                                                        I tend to work on a project without actually having steps/a guide, and this causes me to either
+                                                        procrastinate, or begin work so late that it piles up and I get stressed out.</p>
+
+                                                    <p><strong>The team has helped me a lot with this, especially with the agreements that we made. We documented
+                                                        a team biography in Notion, so that everybody can use that as a basis for their own. Also, every fridays
+                                                        we had a 'reflection moment' after the presentation for the client, so that we discuss how the week went
+                                                        and made plans for the next. It also helped that we proposed different working locations for better focus.</strong></p>
+                                                </li>
+                                            </ul>
+                                    </li>
+
+                                    <li>
+                                        <h3>Highlights of the courses</h3>
+                                        <ul>
+                                            <!-- the courses! -->
+                                            <li>
+                                                <h4>Web Apps From Scratch</h4>
+                                                <p>A free project that gives a good start to the minor and to freshen up our skills.</p>
+                                            </li>
+
+                                            <li>
+                                                <h4>CSS to the Rescue</h4>
+                                                <p>This is where you really dive in the art of CSS. I learned once again how to write 
+                                                    efficient CSS without using the restrictions, and found out some new techniques 
+                                                    too that I use to this day.</p>
+                                            </li>
+
+                                            <li>
+                                                <h4>Browser Technologies</h4>
+                                                <p>A useful project that dives in form and validation design. It wasn’t one of my favourite 
+                                                    projects, but I did learn a lot in shaping good forms and adding important elements. The 
+                                                    lectures from Jeremy Keith helped a lot too!.</p>
+                                            </li>
+
+                                            <li>
+                                                <h4>Application Programming Interfaces</h4>
+                                                <p>One of my favourite projects. I challenged myself with the Spotify O Auth API, 
+                                                    and made a super cool recommendations app with it. I really liked building this app, 
+                                                    and sometimes when I search for good songs, I just boot this up and add it to my playlist!</p>
+                                            </li>
+
+                                            <li>
+                                                <h4>Hackathon</h4>
+                                                <p>Probably one of the projects where you get absolute bang for your buck in a VERY short
+                                                    period of time. I made a cool interactive data visualisation globe together with my team. 
+                                                    Your eyes will be strained, arms weak, knees heavy, but you get results and earn skills 
+                                                    that you normally learn in like 4 weeks or so.</p>
+                                            </li>
+
+                                            <li>
+                                                <h4>Human Centered Design</h4>
+                                                <p>I loved doing this project and working together with Marie to make a tailored inclusive design 
+                                                    that’s not only suitable for her, but for all of the deaf and hard of hearing. It also gave me 
+                                                    insights and wake up calls of how they experience media.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h3>How did the master thesis go?</h3>
+                                        <p>The Tumi Mundo project has turned out to be a fantastic one, and has given me the opportunity 
+                                            to not only improve my skills and learning goals in many areas, but has also given me a first 
+                                            experience of how things should roughly go when working for a real client. It has taught me that 
+                                            working in a team is really necessary. Only by working together can you make really good strides, 
+                                            both in the professional field but also at a personal field. I was really lucky with the cooperation 
+                                            and communication in my team, but also with the coaches and the client. It was nice to see that we 
+                                            could go literally anywhere and any time for useful feedback. It was also nice that we could also 
+                                            take a free direction from the client, they were very flexible and we used the opportunity to really 
+                                            apply a lot of new ideas into the project. It’s a pity that the master's thesis was only 6 weeks, 
+                                            I would have liked it to be a bit longer, but I definitely learned a lot, and gained a lot of ideas 
+                                            and experiences that will do me good when I do my internship next year.</p>
+
+                                            <div class="img-block">
+                                                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJtaWwyajJ4Z3dqb3FscGZzbWxndDF3M2tiZTdwdjZ5YTd1N25ybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eZsXcG2Y8zZDO/giphy.webp">
+                                            </div>
+                                    </li>
+
+                                    <li>
+                                        <h3>How did the minor go?</h3>
+                                        <p>I also enjoyed the minor in itself and have not regretted it. My first option was to choose something 
+                                            else because I didn't want to overwork myself due to my burnout (I read that this was an intensive minor), 
+                                            but in hindsight I chose it because this direction is what I want in my future after all. I also took the
+                                            chance to use the minor to complete my portfolio. The courses are well designed and rounded. The difficulty
+                                            is in my opinion just good enough to challenge yourself to a higher level and it's been very nice to see 
+                                            teachers from other countries and schools coming by to teach us.</p>
+                                    </li>
+
+                               </ul>
+                            </div>
+
+                            <!-- Tweet actions -->
+                            <div class="tweet-actions">
+                                <i class="fas fa-reply"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="fas fa-star favorite-button"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="tweet">
+                        <div class="tweet-content">
+                            <div class="tweet-header">
+                                <img src="../images/lainecedes.png" alt="Elaine's profile picture">
+                                <h3>⭐️ Elaine ⭐️</h3>
+                               <a href="#"><span class="tweet-username">@lainecedes</span></a>
+                                <p class="tweet-date">31 May</p>
+                            </div>
+                            <h2 class="tweet-text">New Learning Goal!</h2>
+                            <div class="tweet-details">
+                                <p>Whenever we have done a presentation during the master's thesis, we always have a reflection meeting afterwards where we 
+                                    reflect on the end of the week as a team, and plan ahead for next week. During week 3, we talked about planning as a whole, 
+                                    and I found out that I have another learning objective called <strong>Structured working and planning</strong>. I have a lot of trouble with 
+                                    structure in my work and now that we are making appointments together, this gives me motivation it did help me. I will use 
+                                    this learning goal to try to neatly put down all the information/plans and submit it in time for the final interview.</p>
+
+                                    <div class="img-block">
+                                        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzhyMHBjbDF6MWZpeG5xN3d1OTgxZjkyeTRpaHZhN2E5NHd4NGp0NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OmU1VMsIBEBOkhGeBT/giphy.webp">
+                                    </div>
+                            </div>
+
+                            <!-- Tweet actions -->
+                            <div class="tweet-actions">
+                                <i class="fas fa-reply"></i>
+                                <i class="fas fa-retweet"></i>
+                                <i class="fas fa-star favorite-button"></i>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </div>
+                    </li> 
                 </ul>
 
                 <!-- More tweets -->

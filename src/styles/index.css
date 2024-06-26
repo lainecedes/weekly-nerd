@@ -21,11 +21,70 @@ h1 {
     }
 }
 
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 body {
     font-family: "Lexend Deca";
     margin: 0 auto;
     padding: 0;
 }
+
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--twitter-pink);
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.mask-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: zoomInOut 1.25s ease-in-out forwards;
+    animation-delay: 0.3s;
+}
+
+.twitter-icon {
+    font-size: 60px;
+    color: white;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(0.9);
+    }
+    45% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(50);
+    }
+}
+
+
+
+
+
 
 
 /* GENERAL CODE */
@@ -57,6 +116,11 @@ header {
     & a {
         text-decoration: none;
         color: inherit;
+        transition: font-weight 0.3s ease;
+    }
+
+    & a:hover{
+        font-weight: bold;
     }
 }
 
@@ -362,6 +426,15 @@ pre code {
     border-radius: 0.5em;
 }
 
+.inline-code {
+    background: #2d2b57;
+    color: #e3dfff;
+    padding: 0.3em 0.5em;
+    border-radius: 0.5em;
+    font-weight: 400;
+    font-family: monospace;
+}
+
 
 /* ------ */
 /* FOOTER */
@@ -369,4 +442,31 @@ pre code {
 
 .footer-text {
     color: var(--grey);
+}
+
+
+
+/* LEARNING GOALS */
+
+.index.learning-goals {
+
+    .tweet-details ul {
+        margin: 0;
+        padding: 0;
+    
+        li {
+            list-style: none;
+        }
+    }
+
+    .tweet-details .img-block {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        text-align: center;
+    }
+
+    .tweet-details img {
+        width: 75%;
+        border-radius: 1em;
+    }
 }
