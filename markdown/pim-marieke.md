@@ -1,4 +1,4 @@
-## Digitaal Toegankelijk: Insights from "Weekly Nerd" on Accessibility
+## Digitaal Toegankelijk: Insights on Accessibility
 In a recent Weekly Nerd session focused on digital accessibility, Marieke de Hoop, a researcher and former CMD student, and Pim Schuurman, co-founder of a specialized accessibility company called Digitaal Toegankelijk, have shedded light on important aspects of creating inclusive digital experiences.
 
 ### Who Gets (Unintentionally) Excluded?

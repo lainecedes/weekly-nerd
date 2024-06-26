@@ -26,4 +26,4 @@ This eventually worked well, but was not without problems. We did have some issu
 
 
 ### The End Result
-The end result can be seen here, at cssdayta.vercel.app.
+The end result can be seen here, at https://cssdayta.vercel.app.
