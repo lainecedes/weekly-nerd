@@ -10,6 +10,7 @@ When I have time left, I want to:
 - Add a favorites page where you can favorite tweets on the 'timeline', and these favorited tweets will show on that page. The favorite button works, but is not fully functional yet
 - cleaning up my code
 - adding this project to my portfolio.
+- properly making the whole site responsive (making a new layout for this soon)
 
 
 The end result can be seen at the link in the About me section of this repo.
